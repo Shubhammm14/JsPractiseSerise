@@ -1,0 +1,2 @@
+# JsPractiseSerise
+a code repository
