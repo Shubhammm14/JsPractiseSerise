@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: darkgoldenrod;color: aliceblue;">
+    
+</body>
+  <script>
+    const div=document.createElement("div")
+    console.log(div)
+    div.className="main"
+    div.id=Math.ceil(Math.random()*10+1)
+    div.setAttribute("title","gemerated Attribute")
+    div.style.backgroundColor="darkcyan"
+    div.style.padding="12px"
+    div.innerText="shubham aur coffee"
+    const addText=document.createTextNode("shuabhm aur coffee")
+    div.appendChild(addText)
+    document.body.appendChild(div)
+    </script>
+</html>
