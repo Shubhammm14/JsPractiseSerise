@@ -3,24 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoLor changer</title>
-    <link rel="stylesheet" ref="../style.css"  />
+    <title>Color Changer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .canvas {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: 2px solid #eee7e7;
+            border-radius: 4px;
+        }
+
+        #grey {
+            background-color: grey;
+        }
+
+        #yellow {
+            background-color: yellow;
+        }
+
+        #blue {
+            background-color: blue;
+            color: #fff;
+        }
+
+        #pink {
+            background-color: pink;
+        }
+
+        #orange {
+            background-color: orange;
+        }
+
+        h2 {
+            color: #555;
+        }
+    </style>
 </head>
 <body>
     <nav>
-        <a herf="/" aria-current="page">Home</a>
-        <a target="_blank" herf="https://www.youtube.com">Youtube</a>
-        </nav>
-        <div class="canvas">
-        <h1>Color schema changer</h1>
-        <span class="button" id="grey">grey</span>
-        <span class="button" id="yellow">yellow</span>
-        <span class="button" id="blue">blue</span>
-        <span class="button" id="pink">pink</span>
-        <span class="button" id="orange">orange</span>
+        <a href="/" aria-current="page">Home</a>
+        <a target="_blank" href="https://www.youtube.com">Youtube</a>
+    </nav>
+    <div class="canvas">
+        <h1>Color Schema Changer</h1>
+        <span class="button" id="grey">Grey</span>
+        <span class="button" id="yellow">Yellow</span>
+        <span class="button" id="blue">Blue</span>
+        <span class="button" id="pink">Pink</span>
+        <span class="button" id="orange">Orange</span>
         <h2>Click on any color you like</h2>
-</div>
-
+    </div>
+    <script src="javaScript.js"></script>
 </body>
-<script src="javaScript.js"></script>
 </html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Random Guess Boy</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .canvas {
+            background-color: darkgoldenrod;
+            color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 80px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            color: rgb(112, 97, 11);
+        }
+        h2{
+            cursor: pointer;
+            color: orange;
+        }
+        
+        p {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .form {
+            text-align: center;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+        }
+
+        .form label,
+        .form input {
+            margin-bottom: 10px;
+        }
+
+        .guessField {
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        .guessSubmit {
+            padding: 10px;
+            font-size: 16px;
+            background-color: rgb(112, 97, 11);
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .resultParas {
+            flex-direction: column;
+            justify-content: center;
+            align-items:  center;
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        .guesses {
+            font-weight: bold;
+        }
+
+        .lastResult {
+            font-weight: bold;
+            color: rgb(242, 235, 20);
+        }
+
+        .lowOrHi {
+            font-weight: bold;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="canvas">
+        <h1>Number Gambler</h1>
+        <p>Try to gamble between 1 and 100 </p>
+        <p>you have 10 Attempts to gues it right</p>
+        </br>
+        <form class="form">
+            <label for="guessField" id="guess">Guess A Number</label>
+            <input type="text" id="guessField" class="guessField">
+            <input type="submit" id="subt" value="Submit guess" class="guessSubmit">
+        </form>
+        <div class="resultParas">
+            <p>Previous Gusses : <span class="guesses"></span></p>
+            <p>Gusses Remaining : <span class="lastResult">10</span></p>
+            <p class="lowOrHi"></p>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+<script src="javaScript.js"></script>
+
+</html>
