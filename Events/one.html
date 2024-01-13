@@ -10,7 +10,7 @@
 <body style="background-color:darkcyan">
     <h2>Amazing image</h2>
     <div>
-        <ul id="'images">
+        <ul id="images">
             <li><img width="200px" id="photoshop"
                     src="https://cdn.pixabay.com/photo/2018/11/17/22/15/trees-3822149_640.jpg"></li>
 
@@ -26,7 +26,7 @@
             <li><img width="200px" id="prayer"
                     src="https://cdn.pixabay.com/photo/2016/04/20/19/47/wolves-1341881_640.jpg"></li>
 
-            <li><a style="color:aliceblue;" href="https://google.com" id="google"></a></li>
+            <li><a style="color:aliceblue;" href="https://google.com" id="google">Googlle</a></li>
         </ul>
     </div>
 
@@ -36,19 +36,42 @@
     //     alert("owl clicked") 
     // }
     //attachEvent()
-    // jQuery - on
+    // jQuery - onEvent listner
 
 
     //type,timestamp,defaultPrevented
     //target,toElement,srcElement,currentTarget,
     //clientX, clientY,screenX,screenY
     //altKey,crltKey,shiftKey,keyCode
-    document.getElementById('images').addEventListener('click', function (e) {
-        console.log("licked inside the ul");
-    }, false)
-    document.getElementById('owl').addEventListener('click', function (e) {
-        console.log("licked inside owl");
-    }, false)
+
+
+
+    // document.getElementById('images').addEventListener('click', function (e) {
+    //     console.log("licked inside the ul");
+    // }, false)//bubling event propagation,(true) capturing mode
+    // document.getElementById('owl').addEventListener('click', function (e) {
+    //     console.log("licked inside owl");
+    //     e.stopPropagation()//it stops the propagation of buble
+    // }, false)//bubling event propagation ,(true) capturing mode
+    // document.getElementById('google').addEventListener('click',function(e){
+    //  e.preventDefault();//it prevents the default working
+    //  e.stopPropagation();//propagation stop
+    // },false)
+
+    document.querySelector('#images').addEventListener('click',function(e){
+      console.log(e.target.parentNode);
+         
+      console.log(e.target.tagName);
+      if(e.target.tagName==='IMG'){
+        console.log(e.target.id);
+      let removeIt=e.target.parentNode;   
+      removeIt.remove();
+    }
+      //removeIt.parentNode.removeChild(removeIt)
+
+    },false)
+
+
 </script>
 
 </html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:darkcyan">
+    <h1>Learning JS</h1>
+    <button id="start6">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayDate=function(str){
+    console.log(str,Date.now())
+   }
+   let IntervalId;
+   document.querySelector('#start').addEventListener('click',function(){
+     IntervalId=setInterval(sayDate,1000,"shubham")
+   })
+   
+   document.querySelector('#stop').addEventListener('click',function(){
+    clearInterval(IntervalId)
+   })
+  
+</script>
+</html>

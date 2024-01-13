@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:darkcyan">
+    <h1>Learning JS</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayShubham=function(){
+        console.log("shubham")
+    }
+    const text=function(){
+    document.querySelector('h1').innerHTML="JS isnt difficult"
+    }
+     const ref=  setTimeout(text,10000)
+
+      document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(ref)
+        console.log("stop")
+      })
+</script>
+</html>
