@@ -135,7 +135,8 @@ console.log(Object.keys(tinderUser))//[ 'id', 'name', 'logIn' ]
 console.log(Object.values(tinderUser))//[ '123', 'shubham', false ]
 
 
-console.log(Object.entries(tinderUser))//[ [ 'id', '123' ], [ 'name', 'shubham' ], [ 'logIn', false ] ]  ecpair is converted in the form of arrays
+console.log(Object.entries(tinderUser))//[ [ 'id', '123' ], [ 'name', 'shubham' ], [ 'logIn', false ] ]
+//  ecpair is converted in the form of arrays
 
 
 console.log(tinderUser.hasOwnProperty('logIn'))//true

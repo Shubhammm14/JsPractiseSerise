@@ -41,7 +41,8 @@ function lognUser(username){//we can give a default value which will work when w
 
 
 
- function calculateCarPrice(val1,val2, ...num1){//rest operator is same bt depend on use case when we will say spread and when we will say rest operator
+ function calculateCarPrice(val1,val2, ...num1){
+    //rest operator is same bt depend on use case when we will say spread and when we will say rest operator
     return num1;//num will have 300 and 400     [300,400]
  }
  console.log(calculateCarPrice(100,200,300,400))

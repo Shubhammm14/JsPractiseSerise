@@ -19,7 +19,8 @@ tea.printMe()
  * a new object is created:the new keyword initiates the creation of a new javaScript object.
  * a new prototype is linked:the newly created object gets linked to the prototype property of the constructor function.
    this mean that it has acces to properties and methods defined on the constructors prototype.
- * the constructor is called: the constructor function is called with the specified arguments and this is bound to the newly created object.if no explicit return is specifieed
+ * the constructor is called: the constructor function is called with the specified arguments and this is bound to 
+   the newly created object.if no explicit return is specifieed
    from the constructor,javascriptassumes this ,the newly created object ,to be the intended return value.
  * the new object is returned :after the constructor funciton has been called ,if it dosent return a non primitive value 
    (object,array,function,etc).the newly created object is returned.

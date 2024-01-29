@@ -20,7 +20,8 @@ console.log(this)//{}
 // function chai(){
 //     const username="shuabhm"//context
 //     console.log(this)//it is not empty neither {} it will return a lot of predefined value
-//     console.log(this.username)//undefined it does not work as same that is on object .in functions the behaviour is different
+//     console.log(this.username)//undefined it does not work as same that is on object 
+//        .in functions the behaviour is different
 // }
 // chai()
 
